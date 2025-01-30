@@ -80,7 +80,7 @@ def create_modules(blocks):
                 module.add_module("leaky_{0}".format(index), activn)
 
         #If it's an upsampling layer
-        #We use Bilinear2dUpsampling
+        #We use Bilinear2dUpsampling a
         elif (x["type"] == "upsample"):
             stride = int(x["stride"])
             upsample = nn.Upsample(scale_factor = 2, mode = "bilinear")
